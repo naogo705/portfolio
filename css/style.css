@@ -1,0 +1,186 @@
+/* 共通style */
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  box-shadow: 3px 3px 6px -2px #555;
+  background-color: #000;
+  opacity: 0.9;
+}
+
+.header-home a {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* pcStyle */
+@media screen and (min-width: 768px) {
+  .spHeader {
+    display: none;
+  }
+
+  .pcHeader {
+    height: 70px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .pcHeaderList {
+    display: flex;
+  }
+
+  .pcHeaderList-item {
+    margin-right: 30px;
+  }
+
+  .pcHeaderList-item a {
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+/* spStyle */
+@media screen and (max-width: 767px) {
+  .pcHeader {
+    display: none;
+  }
+
+  .header-home a {
+    font-size: 18px;
+  }
+
+  .spHeader {
+    height: 70px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .spHeader-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+  }
+
+  .spHeader-btn span,
+  .spHeader-btn span:before,
+  .spHeader-btn span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 25px;
+      border-radius: 3px;
+      background-color: #fff;
+      position: absolute;
+  }
+
+  .spHeader-btn span:before {
+      bottom: 8px;
+  }
+
+  .spHeader-btn span:after {
+      top: 8px;
+  }
+
+  #spHeader-btn-check:checked ~ .spHeader-btn span {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  #spHeader-btn-check:checked ~ .spHeader-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #spHeader-btn-check:checked ~ .spHeader-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  #spHeader-btn-check {
+    display: none;
+  }
+
+  .spHeader-nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #444;
+    transition: all 0.5s;
+  }
+
+  .spHeader-nav ul {
+    padding: 70px 10px 0;
+  }
+
+  .spHeader-nav ul li {
+    border-bottom: dotted 2px #ffffff;
+    list-style: none;
+  }
+
+  .spHeader-nav ul li a {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 20px 15px 20px 0;
+    position: relative;
+  }
+
+  .spHeader-nav ul li:nth-of-type(1) a::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 11px;
+    top: 15px;
+    background-image: url("../images/skill.png");
+    background-size: cover;
+  }
+
+  .spHeader-nav ul li:nth-of-type(2) a::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 11px;
+    top: 15px;
+    background-image: url("../images/works.png");
+    background-size: cover;
+  }
+
+  .spHeader-nav ul li:nth-of-type(3) a::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 11px;
+    top: 15px;
+    background-image: url("../images/mail.png");
+    background-size: cover;
+  }
+
+  #spHeader-btn-check:checked ~ .spHeader-nav {
+    left: 0;
+  }
+}

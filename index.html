@@ -4,10 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
 </head>
 <body>
-  <h1>Hello Portfolio</h1>
-  <p>こんにちは</p>
+  <header class="header">
+    <div class="pcHeader">
+      <div class="header-home">
+        <a href="#">My Portfolio</a>
+      </div>
+      <nav>
+        <ul class="pcHeaderList">
+          <li class="pcHeaderList-item">
+            <a href="#skill">Skill</a>
+          </li>
+          <li class="pcHeaderList-item">
+            <a href="#works">Works</a>
+          </li>
+          <li class="pcHeaderList-item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="spHeader">
+      <div class="header-home">
+        <a href="#">My Portfolio</a>
+      </div>
+      <div class="spHeader-hamburger">
+        <input type="checkbox" id="spHeader-btn-check">
+        <label for="spHeader-btn-check" class="spHeader-btn"><span></span></label>
+        <div class="spHeader-nav">
+          <ul>
+            <li><a href="#">Skill</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1>Hello Portfolio</h1>
+    <p>こんにちは</p>
+  </main>
+  <footer></footer>
 </body>
 </html>

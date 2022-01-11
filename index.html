@@ -11,31 +11,31 @@
 <body>
   <header class="header">
     <div class="pcHeader">
-      <div class="header-home">
+      <div class="header__home">
         <a href="#">My Portfolio</a>
       </div>
       <nav>
         <ul class="pcHeaderList">
-          <li class="pcHeaderList-item">
-            <a href="#skill">Skill</a>
+          <li class="pcHeaderList__item">
+            <a href="#skill" class="pcHeaderList__link">Skill</a>
           </li>
-          <li class="pcHeaderList-item">
-            <a href="#works">Works</a>
+          <li class="pcHeaderList__item">
+            <a href="#works" class="pcHeaderList__link">Works</a>
           </li>
-          <li class="pcHeaderList-item">
-            <a href="#contact">Contact</a>
+          <li class="pcHeaderList__item">
+            <a href="#contact" class="pcHeaderList__link">Contact</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="spHeader">
-      <div class="header-home">
+      <div class="header__home">
         <a href="#">My Portfolio</a>
       </div>
-      <div class="spHeader-hamburger">
-        <input type="checkbox" id="spHeader-btn-check">
-        <label for="spHeader-btn-check" class="spHeader-btn"><span></span></label>
-        <div class="spHeader-nav">
+      <div class="spHeader__hamburger">
+        <input type="checkbox" id="spHeader__btn-check">
+        <label for="spHeader__btn-check" class="spHeader__btn"><span></span></label>
+        <div class="spHeader__nav">
           <ul>
             <li><a href="#">Skill</a></li>
             <li><a href="#">Works</a></li>
@@ -46,9 +46,12 @@
     </div>
   </header>
   <main>
-    <h1>Hello Portfolio</h1>
-    <p>こんにちは</p>
+    <section class="topBox">
+      <p class="topBox__name">Naoto  Fujita</p>
+    </section>
   </main>
   <footer></footer>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

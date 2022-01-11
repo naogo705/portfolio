@@ -78,10 +78,6 @@ a {
 
 /* spStyle */
 @media screen and (max-width: 767px) {
-  .fs-44 {
-    font-size: 44px;
-  }
-
   .pcHeader {
     display: none;
   }

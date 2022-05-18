@@ -1,12 +1,4 @@
 /* 共通style */
-body {
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
 .header {
   box-shadow: 3px 3px 6px -2px #555;
   background-color: #000;
@@ -16,14 +8,6 @@ a {
 .header__home a {
   font-size: 20px;
   color: #fff;
-}
-
-.topBox__name span {
-  opacity: 0;
-}
-
-.topBox__name {
-  opacity: 0;
 }
 
 /* pcStyle */
@@ -52,27 +36,8 @@ a {
   .pcHeaderList__item a {
     font-size: 20px;
     color: #fff;
-    transition: all 2s;
+    /* transition: all 2s; */
     display: inline-block;
-  }
-
-  .pcHeaderList__link:hover {
-    transform: rotateX(360deg);
-  }
-
-  .topBox {display: flex;
-    justify-content: center;
-    padding: 260px 0 300px;
-  }
-
-  .topBox__name {
-    font-size: 84px;
-    font-weight: bold;
-  }
-
-  .topBox__name--last {
-    display: inline-block;
-    margin-left: 30px;
   }
 }
 
@@ -211,15 +176,5 @@ a {
 
   #spHeader__btn-check:checked ~ .spHeader__nav {
     left: 0;
-  }
-
-  .topBox {
-    padding: 32vw 0 42vw;
-    text-align: center;
-  }
-
-  .topBox__name {
-    font-size: 13vw;
-    font-weight: bold;
   }
 }

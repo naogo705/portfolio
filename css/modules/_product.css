@@ -1,0 +1,11 @@
+/* 共通style */
+.product {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    text-align: center;
+  }
+}

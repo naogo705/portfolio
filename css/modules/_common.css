@@ -1,0 +1,15 @@
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.contentsBox {
+  margin-bottom: 60px;
+}

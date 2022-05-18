@@ -1,0 +1,55 @@
+/* 共通style */
+.skill {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skillList__item {
+  width: 27%;
+  height: 22vw;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  padding: 15px;
+}
+
+/* pcStyle */
+@media screen and (min-width: 768px) {
+  .skill {
+    text-align: center;
+  }
+
+  .skillList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 50px;
+  }
+
+  .skillList__item {
+    display: flex;
+    align-items: center;
+    margin: 0 2px 40px;
+  }
+
+  .skillList__item:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    transition : 0.5s;
+    cursor: auto;
+  }
+
+  .skillList__title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .skillList__text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+

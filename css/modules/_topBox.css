@@ -1,0 +1,40 @@
+/* 共通style */
+.topBox__name span {
+  opacity: 0;
+}
+
+.topBox__name {
+  opacity: 0;
+}
+
+/* pcStyle */
+@media screen and (min-width: 768px) {
+  .topBox {
+    display: flex;
+    justify-content: center;
+    padding: 260px 0 300px;
+  }
+
+  .topBox__name {
+    font-size: 84px;
+    font-weight: bold;
+  }
+
+  .topBox__name--last {
+    display: inline-block;
+    margin-left: 30px;
+  }
+}
+
+/* spStyle */
+@media screen and (max-width: 767px) {
+  .topBox {
+    padding: 32vw 0 42vw;
+    text-align: center;
+  }
+
+  .topBox__name {
+    font-size: 13vw;
+    font-weight: bold;
+  }
+}

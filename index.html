@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/typewriter.js"></script>
   <link rel="stylesheet" href="https://naogo705.github.io/portfolio/css/reset.css">
   <link rel="stylesheet" href="https://naogo705.github.io/portfolio/css/main.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Portfolio</title>
+  <script src="js/typewriter.js"></script>
+  <title>Portfolio</title>
 </head>
 <body>
   <header class="header">
@@ -22,13 +22,13 @@
       <nav>
         <ul class="pcHeaderList">
           <li class="pcHeaderList__item">
-            <a href="#contact" class="pcHeaderList__link">PROFILE</a>
+            <div id="profileBtn" class="pcHeaderList__link">PROFILE</div>
           </li>
           <li class="pcHeaderList__item">
-            <a href="#skill" class="pcHeaderList__link">Skill</a>
+            <div id="skillBtn" class="pcHeaderList__link">Skill</div>
           </li>
           <li class="pcHeaderList__item">
-            <a href="#works" class="pcHeaderList__link">Product</a>
+            <div id="productBtn" class="pcHeaderList__link">Product</div>
           </li>
         </ul>
       </nav>
@@ -42,20 +42,26 @@
         <label for="spHeader__btn-check" class="spHeader__btn"><span></span></label>
         <div class="spHeader__nav">
           <ul>
-            <li><a href="#">PROFILE</a></li>
-            <li><a href="#">Skill</a></li>
-            <li><a href="#">Product</a></li>
+            <li>
+              <a id="profileBtn_sp">PROFILE</a>
+            </li>
+            <li>
+              <a id="skillBtn_sp">Skill</a>
+            </li>
+            <li>
+              <a id="productBtn_sp">Product</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </header>
-  <main>
+  <main class="main">
     <section class="topBox">
-      <p class="topBox__name">Naoto  Fujita</p>
+      <h1 class="topBox__name">Naoto  Fujita</h1>
     </section>
-    <section class="profile">
-      <h3 class="profile__title contentsTitle" data-aos="fade-up">PROFILE</h3>
+    <section id="profile"  class="profile">
+      <h2 class="profile__title contentsTitle" data-aos="fade-up">PROFILE</h2>
       <div class="profileArea">
         <div class="profileArea__thumbnail" data-aos="fade-down-right">
             <img src="./images/profile2.png" alt="プロフィール写真" class="profileArea__img">
@@ -70,51 +76,51 @@
         </div>
       </div>
     </section>
-    <section class="skill">
-      <h3 class="skill__title contentsTitle" data-aos="fade-up">SKILL</h3>
+    <section id="skill" class="skill">
+      <h2 class="skill__title contentsTitle" data-aos="fade-up">SKILL</h2>
       <div class="contentsBox">
         <ul class="skillList">
           <li class="skillList__item" data-aos="flip-left">
             <div class="skillList__itemBox">
-              <h4 class="skillList__title">HTML5</h4>
+              <h3 class="skillList__title">HTML5</h3>
               <p class="skillList__text">レスポンシブ対応やセマンティックなコーディングが可能です。</p>
             </div>
           </li>
           <li class="skillList__item" data-aos="flip-left">
             <div class="skillList__itemBox">
-              <h4 class="skillList__title">CSS3</h4>
+              <h3 class="skillList__title">CSS3</h3>
               <p class="skillList__text">基本的なコーディングが可能です。CSSを使った様々なアニメーションの実装もできます。</p>
             </div>
           </li>
           <li class="skillList__item" data-aos="flip-left">
             <div class="skillList__itemBox">
-              <h4 class="skillList__title">JavaScript</h4>
+              <h3 class="skillList__title">JavaScript</h3>
               <p class="skillList__text">基本的なDOM操作を行った実装が可能です。jQueryでのコーディングも可能でアニメーションの実装ができます。</p>
             </div>
           </li>
           <li class="skillList__item" data-aos="flip-left">
             <div class="skillList__itemBox">
-              <h4 class="skillList__title">Adobe XD</h4>
+              <h3 class="skillList__title">Adobe XD</h3>
               <p class="skillList__text">デザイン素材の書き出しやシェイプでマスクなどが可能です。</p>
             </div>
           </li>
           <li class="skillList__item" data-aos="flip-left">
             <div class="skillList__itemBox">
-              <h4 class="skillList__title">Vue.js</h4>
+              <h3 class="skillList__title">Vue.js</h3>
               <p class="skillList__text">現在勉強中。オンラインツールにて基礎から勉強してます。</p>
             </div>
           </li>
           <li class="skillList__item" data-aos="flip-left">
             <div class="skillList__itemBox">
-              <h4 class="skillList__title">Notion</h4>
+              <h3 class="skillList__title">Notion</h3>
               <p class="skillList__text">SaaS型の介護サービス開発プロジェクトにて、タスク管理表などを作成しておりました。基本的なツール操作が可能です。</p>
             </div>
           </li>
         </ul>
       </div>
     </section>
-    <section class="product">
-      <h3 class="product__title contentsTitle" data-aos="fade-up">PRODUCT</h3>
+    <section id="product" class="product">
+      <h2 class="product__title contentsTitle" data-aos="fade-up">PRODUCT</h2>
       <ul class="productList">
         <li class="productList__item">
           <div class="productList__introduction" data-aos="zoom-in-right">
@@ -161,7 +167,9 @@
       </ul>
     </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <p class="footer__text">By Naoto Fujita</p>
+  </footer>
   <script>
     AOS.init({
       offset: 100,
@@ -170,6 +178,43 @@
       easing: 'ease-out',
       anchorPlacement:'bottom-top',
       once:false
+    });
+  </script>
+  <script>
+    $("#profileBtn").on("click", function(){
+      const profile = $("#profile").offset().top;
+
+      $(window).scrollTop(profile);
+    });
+
+    $("#profileBtn_sp").on("click", function(){
+      const profile = $("#profile").offset().top;
+
+      $(window).scrollTop(profile);
+    });
+
+    $("#skillBtn").on("click", function(){
+      const skill = $("#skill").offset().top;
+
+      $(window).scrollTop(skill);
+    });
+
+    $("#skillBtn_sp").on("click", function(){
+      const skill = $("#skill").offset().top;
+
+      $(window).scrollTop(skill);
+    });
+
+    $("#productBtn").on("click", function(){
+      const product = $("#product").offset().top;
+
+      $(window).scrollTop(product);
+    });
+
+    $("#productBtn_sp").on("click", function(){
+      const product = $("#product").offset().top;
+
+      $(window).scrollTop(product);
     });
   </script>
 </body>

@@ -13,3 +13,13 @@ li {
 .contentsBox {
   margin-bottom: 60px;
 }
+
+* {
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}

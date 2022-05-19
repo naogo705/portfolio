@@ -1,9 +1,4 @@
 /* 共通style */
-.profileArea__thumbnail {
-  width: 300px;
-  height: 300px;
-}
-
 .profileArea__img {
   display: inline-block;
   width: 100%;
@@ -15,13 +10,15 @@
 @media screen and (min-width: 768px) {
   .profileArea {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 90px;
     padding: 0 50px;
   }
 
   .profileArea__thumbnail {
+    width: 300px;
+    height: 300px;
     margin-right: 30px;
   }
 
@@ -35,5 +32,24 @@
 
   .profileArea__greeting {
     margin-top: 10px;
+  }
+}
+
+/* SPstyle */
+@media screen and (max-width: 767px) {
+  .profileArea {
+    padding: 0 20px 60px;
+  }
+
+  .profileArea__thumbnail {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .profileArea__introduction {
+    margin-top: 15px;
+    text-align: left;
+    line-height: 2;
   }
 }

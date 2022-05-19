@@ -2,53 +2,12 @@
 @import url("modules/_header.css");
 @import url("modules/_topBox.css");
 @import url("modules/_skill.css");
+@import url("modules/_skillList.css");
 @import url("modules/_common.css");
 @import url("modules/_contentsTitle.css");
 @import url("modules/_product.css");
 @import url("modules/_productList.css");
 @import url("modules/_profile.css");
 @import url("modules/_profileArea.css");
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); */
-
+@import url("modules/_footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&family=M+PLUS+1p:wght@800&family=Montserrat:wght@700&display=swap');
-
-* {
-  font-family: 'M PLUS 1p', sans-serif;
-}
-
-@media screen and (max-width: 767px) {
-  .spHeader__nav ul li:nth-of-type(1) a::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 11px;
-    top: 15px;
-    background-image: url("../images/skill.png");
-    background-size: cover;
-  }
-
-  .spHeader__nav ul li:nth-of-type(2) a::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 11px;
-    top: 15px;
-    background-image: url("../images/works.png");
-    background-size: cover;
-  }
-
-  .spHeader__nav ul li:nth-of-type(3) a::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 11px;
-    top: 15px;
-    background-image: url("../images/mail.png");
-    background-size: cover;
-  }
-}

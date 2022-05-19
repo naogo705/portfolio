@@ -3,6 +3,8 @@
   box-shadow: 3px 3px 6px -2px #555;
   background-color: #000;
   opacity: 0.9;
+  position: relative;
+  z-index: 1;
 }
 
 .header__home a {
@@ -33,11 +35,12 @@
     margin-right: 30px;
   }
 
-  .pcHeaderList__item a {
+  .pcHeaderList__item div {
     font-size: 20px;
     color: #fff;
     /* transition: all 2s; */
     display: inline-block;
+    cursor: pointer;
   }
 }
 
@@ -69,7 +72,7 @@
     width: 70px;
     justify-content: center;
     align-items: center;
-    z-index: 90;
+    z-index: 10;
   }
 
   .spHeader__btn span,
@@ -116,8 +119,8 @@
     position: fixed;
     top: 0;
     left: 100%;
-    z-index: 80;
-    background-color: #444;
+    z-index: 1;
+    background-color: #000;
     transition: all 0.5s;
   }
 

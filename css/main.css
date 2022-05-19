@@ -1,4 +1,4 @@
-@import url("reset.css");
+/* @import url("reset.css");
 @import url("modules/_header.css");
 @import url("modules/_topBox.css");
 @import url("modules/_skill.css");
@@ -9,5 +9,571 @@
 @import url("modules/_productList.css");
 @import url("modules/_profile.css");
 @import url("modules/_profileArea.css");
-@import url("modules/_footer.css");
+@import url("modules/_footer.css"); */
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&family=M+PLUS+1p:wght@800&family=Montserrat:wght@700&display=swap');
+
+/* _common.css */
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.contentsBox {
+  margin-bottom: 60px;
+}
+
+* {
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* _contentsTitle.css */
+/* PCstyle */
+@media screen and (min-width: 768px) {
+  .contentsTitle {
+    display: inline-block;
+    font-size: 46px;
+    padding: 30px 100px;
+    color: #fff;
+    background-color: #3d3d3d;
+    margin-bottom: 80px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+
+  .contentsTitle::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 8px;
+    box-shadow: 0 40px 15px rgba(0, 0, 0, .75);
+    border-radius: 80px / 4px;
+  }
+}
+
+/* SPstyle */
+@media screen and (max-width: 767px) {
+  .contentsTitle {
+    display: inline-block;
+    font-size: 24px;
+    padding: 15px 50px;
+    color: #fff;
+    background-color: #3d3d3d;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+
+  .contentsTitle::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 8px;
+    box-shadow: 0 40px 15px rgba(0, 0, 0, .75);
+    border-radius: 80px / 4px;
+  }
+}
+
+/* _footer.css */
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.footer__text {
+  color: #666;
+  font-size: 16px;
+}
+
+/* _header.css */
+/* 共通style */
+.header {
+  box-shadow: 3px 3px 6px -2px #555;
+  background-color: #000;
+  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+}
+
+.header__home a {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* pcStyle */
+@media screen and (min-width: 768px) {
+  .spHeader {
+    display: none;
+  }
+
+  .pcHeader {
+    height: 70px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .pcHeaderList {
+    display: flex;
+  }
+
+  .pcHeaderList__item {
+    margin-right: 30px;
+  }
+
+  .pcHeaderList__item div {
+    font-size: 20px;
+    color: #fff;
+    /* transition: all 2s; */
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+/* spStyle */
+@media screen and (max-width: 767px) {
+  .pcHeader {
+    display: none;
+  }
+
+  .header__home a {
+    font-size: 18px;
+  }
+
+  .spHeader {
+    height: 70px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .spHeader__btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .spHeader__btn span,
+  .spHeader__btn span:before,
+  .spHeader__btn span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 25px;
+      border-radius: 3px;
+      background-color: #fff;
+      position: absolute;
+  }
+
+  .spHeader__btn span:before {
+      bottom: 8px;
+  }
+
+  .spHeader__btn span:after {
+      top: 8px;
+  }
+
+  #spHeader__btn-check:checked ~ .spHeader__btn span {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  #spHeader__btn-check:checked ~ .spHeader__btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #spHeader__btn-check:checked ~ .spHeader__btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  #spHeader__btn-check {
+    display: none;
+  }
+
+  .spHeader__nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    background-color: #000;
+    transition: all 0.5s;
+  }
+
+  .spHeader__nav ul {
+    padding: 70px 10px 0;
+  }
+
+  .spHeader__nav ul li {
+    border-bottom: dotted 2px #ffffff;
+    list-style: none;
+  }
+
+  .spHeader__nav ul li a {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 20px 15px 20px 0;
+    position: relative;
+  }
+
+  .spHeader__nav ul li:nth-of-type(1) a::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 11px;
+    top: 15px;
+    background-image: url("../images/skill.png");
+    background-size: cover;
+  }
+
+  .spHeader__nav ul li:nth-of-type(2) a::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 11px;
+    top: 15px;
+    background-image: url("../images/works.png");
+    background-size: cover;
+  }
+
+  .spHeader__nav ul li:nth-of-type(3) a::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 11px;
+    top: 15px;
+    background-image: url("../images/mail.png");
+    background-size: cover;
+  }
+
+  #spHeader__btn-check:checked ~ .spHeader__nav {
+    left: 0;
+  }
+}
+
+/* _product.css */
+/* 共通style */
+.product {
+  text-align: center;
+}
+
+/* _productList.css */
+/* 共通style */
+.productList__title {
+  margin: 10px 0;
+  border-bottom: 1px solid #666;
+  padding-bottom: 10px;
+}
+
+.productList__img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* PCstyle */
+@media screen and (min-width: 768px) {
+  .productList {
+    padding: 0 50px;
+  }
+
+  .productList__item {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    border-bottom: 1px dashed #666;
+    padding: 0 20px 60px;
+  }
+
+  .productList__title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 3.5vw 15px;
+  }
+
+  .productList__thumbnail {
+    width: 50%;
+    box-shadow: 2px 3px 8px grey;
+    margin-right: 30px;
+  }
+
+  .productList__thumbnail:nth-child(even) {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .productList__introduction {
+    padding: 20px;
+    width: 50%;
+  }
+
+  .productList__img {
+    overflow: hidden;
+    transition:1s all;
+  }
+
+  .productList__img:hover {
+    transform:scale(1.1,1.1);
+    transition:1s all;
+  }
+
+  .productList__text {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  .productList__text--time {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+/* SPstyle */
+@media screen and (max-width: 767px) {
+  .productList {
+    padding: 0 20px 20px;
+  }
+
+  .productList__item {
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #666;
+  }
+
+  .productList__thumbnail {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .productList__title {
+    text-align: center;
+    font-size: 5vw;
+    margin: 0 10vw;
+  }
+
+  .productList__introduction {
+    line-height: 2;
+  }
+}
+
+/* _profile.css */
+.profile {
+  text-align: center;
+}
+
+/* _profileArea.css */
+/* 共通style */
+.profileArea__img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: saturate(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .profileArea {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 90px;
+    padding: 0 50px;
+  }
+
+  .profileArea__thumbnail {
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+  }
+
+  .profileArea__introduction {
+    text-align: left;
+    line-height: 2;
+    box-shadow: 0 3px 6px #666;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .profileArea__greeting {
+    margin-top: 10px;
+  }
+}
+
+/* SPstyle */
+@media screen and (max-width: 767px) {
+  .profileArea {
+    padding: 0 20px 60px;
+  }
+
+  .profileArea__thumbnail {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .profileArea__introduction {
+    margin-top: 15px;
+    text-align: left;
+    line-height: 2;
+  }
+}
+
+/* _skill.css */
+/* 共通style */
+.skill {
+  text-align: center;
+}
+
+/* _skillList.css */
+/* 共通style */
+.skillList__item {
+  width: 27%;
+  height: 22vw;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  padding: 15px;
+}
+
+/* pcStyle */
+@media screen and (min-width: 768px) {
+  .skillList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 50px;
+  }
+
+  .skillList__item {
+    display: flex;
+    align-items: center;
+    margin: 0 2px 40px;
+  }
+
+  .skillList__item:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    transition : 0.5s;
+    cursor: auto;
+  }
+
+  .skillList__title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .skillList__text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+/* SPstyle */
+@media screen and (max-width: 767px) {
+  .skillList__item {
+    width: 60vw;
+    height: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto 20px;
+  }
+
+  .skillList__itemBox {
+    line-height: 2;
+  }
+
+  .skillList__title {
+    width: 100%;
+    font-size: 5vw;
+  }
+
+  .skillList__text {
+    font-size: 4vw;
+  }
+}
+
+/* _topBox.css */
+/* 共通style */
+.topBox__name span {
+  opacity: 0;
+}
+
+.topBox__name {
+  opacity: 0;
+}
+
+/* pcStyle */
+@media screen and (min-width: 768px) {
+  .topBox {
+    display: flex;
+    justify-content: center;
+    padding: 260px 0 300px;
+  }
+
+  .topBox__name {
+    font-size: 84px;
+    font-weight: bold;
+  }
+
+  .topBox__name--last {
+    display: inline-block;
+    margin-left: 30px;
+  }
+}
+
+/* spStyle */
+@media screen and (max-width: 767px) {
+  .topBox {
+    padding: 260px 0;
+    text-align: center;
+  }
+
+  .topBox__name {
+    font-size: 13vw;
+    font-weight: bold;
+  }
+}

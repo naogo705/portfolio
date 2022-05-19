@@ -9,6 +9,6 @@ $(document).ready(function(){
   $('.topBox__name').css({'opacity':1});
   let $typLength = $('.topBox__name').children().length
   for (var i = 0; i <= $typLength; i++) {
-  $('.topBox__name').children('span:eq('+i+')').delay(70*i).animate({'opacity':1},1000);
+  $('.topBox__name').children('span:eq('+i+')').delay(250*i).animate({'opacity':1},1000);
   };
 });

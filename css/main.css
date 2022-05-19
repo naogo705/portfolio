@@ -569,7 +569,7 @@ li {
   .topBox {
     display: flex;
     justify-content: center;
-    padding: 260px 0 300px;
+    padding: 300px 0 300px;
   }
 
   .topBox__name {
@@ -586,7 +586,7 @@ li {
 /* spStyle */
 @media screen and (max-width: 767px) {
   .topBox {
-    padding: 260px 0;
+    padding: 300px 0;
     text-align: center;
   }
 

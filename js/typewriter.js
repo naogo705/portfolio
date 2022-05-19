@@ -1,4 +1,4 @@
-$(window).on('load',function(){
+$(document).ready(function(){
   // ここから文字を<span></span>で囲む記述
   $('.topBox__name').children().addBack().contents().each(function() {
   if (this.nodeType == 3) {
@@ -9,6 +9,6 @@ $(window).on('load',function(){
   $('.topBox__name').css({'opacity':1});
   let $typLength = $('.topBox__name').children().length
   for (var i = 0; i <= $typLength; i++) {
-  $('.topBox__name').children('span:eq('+i+')').delay(70*i).animate({'opacity':1},3000);
+  $('.topBox__name').children('span:eq('+i+')').delay(70*i).animate({'opacity':1},1000);
   };
 });

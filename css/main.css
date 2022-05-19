@@ -558,10 +558,19 @@ li {
 /* 共通style */
 .topBox__name span {
   opacity: 0;
+  background-image: url("../images/meisai.jpg");
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,0);
 }
 
 .topBox__name {
   opacity: 0;
+  display: inline-block;
+}
+
+.brackets {
+  font-size: 84px;
 }
 
 /* pcStyle */
@@ -591,7 +600,11 @@ li {
   }
 
   .topBox__name {
-    font-size: 13vw;
+    font-size: 11vw;
     font-weight: bold;
+  }
+
+  .brackets {
+    font-size: 11vw;
   }
 }

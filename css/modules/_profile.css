@@ -1,3 +1,7 @@
 .profile {
   text-align: center;
 }
+
+.profile__area {
+  padding-top: 100px;
+}

@@ -151,7 +151,7 @@
     position: absolute;
     right: 11px;
     top: 15px;
-    background-image: url("../images/skill.png");
+    background-image: url("../images/profile.png");
     background-size: cover;
   }
 
@@ -162,7 +162,7 @@
     position: absolute;
     right: 11px;
     top: 15px;
-    background-image: url("../images/works.png");
+    background-image: url("../images/skill.png");
     background-size: cover;
   }
 
@@ -173,7 +173,7 @@
     position: absolute;
     right: 11px;
     top: 15px;
-    background-image: url("../images/mail.png");
+    background-image: url("../images/product.png");
     background-size: cover;
   }
 

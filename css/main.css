@@ -8,7 +8,7 @@
 @import url("modules/_product.css");
 @import url("modules/_productList.css");
 @import url("modules/_profile.css");
-@import url("modules/_profileArea.css");
+@import url("modules/_profileBox.css");
 @import url("modules/_footer.css"); */
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&family=M+PLUS+1p:wght@800&family=Montserrat:wght@700&display=swap');
 
@@ -165,11 +165,13 @@ li {
 
   .spHeader {
     height: 70px;
-    margin-left: 15px;
+    padding-left: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000;
+    position: fixed;
+    width: 100%;
   }
 
   .spHeader__btn {
@@ -260,7 +262,7 @@ li {
     position: absolute;
     right: 11px;
     top: 15px;
-    background-image: url("../images/skill.png");
+    background-image: url("../images/profile.png");
     background-size: cover;
   }
 
@@ -271,7 +273,7 @@ li {
     position: absolute;
     right: 11px;
     top: 15px;
-    background-image: url("../images/works.png");
+    background-image: url("../images/skill.png");
     background-size: cover;
   }
 
@@ -282,7 +284,7 @@ li {
     position: absolute;
     right: 11px;
     top: 15px;
-    background-image: url("../images/mail.png");
+    background-image: url("../images/product.png");
     background-size: cover;
   }
 
@@ -295,6 +297,10 @@ li {
 /* 共通style */
 .product {
   text-align: center;
+}
+
+.product__area {
+  padding-top: 100px;
 }
 
 /* _productList.css */
@@ -401,9 +407,13 @@ li {
   text-align: center;
 }
 
-/* _profileArea.css */
+.profile__area {
+  padding-top: 100px;
+}
+
+/* _profileBox.css */
 /* 共通style */
-.profileArea__img {
+.profileBox__img {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -412,7 +422,7 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .profileArea {
+  .profileBox {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -420,13 +430,14 @@ li {
     padding: 0 50px;
   }
 
-  .profileArea__thumbnail {
-    width: 300px;
+  .profileBox__thumbnail {
+    width: 400px;
     height: 300px;
     margin-right: 30px;
   }
 
-  .profileArea__introduction {
+  .profileBox__introduction {
+    width: 80%;
     text-align: left;
     line-height: 2;
     box-shadow: 0 3px 6px #666;
@@ -434,24 +445,24 @@ li {
     padding: 20px;
   }
 
-  .profileArea__greeting {
+  .profileBox__greeting {
     margin-top: 10px;
   }
 }
 
 /* SPstyle */
 @media screen and (max-width: 767px) {
-  .profileArea {
+  .profileBox {
     padding: 0 20px 60px;
   }
 
-  .profileArea__thumbnail {
+  .profileBox__thumbnail {
     width: 200px;
     height: 200px;
     margin: 0 auto;
   }
 
-  .profileArea__introduction {
+  .profileBox__introduction {
     margin-top: 15px;
     text-align: left;
     line-height: 2;
@@ -462,6 +473,10 @@ li {
 /* 共通style */
 .skill {
   text-align: center;
+}
+
+.skill__area {
+  padding-top: 100px;
 }
 
 /* _skillList.css */

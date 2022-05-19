@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
   <script src="js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://naogo705.github.io/portfolio/css/reset.css">
-  <link rel="stylesheet" href="https://naogo705.github.io/portfolio/css/main.css">
+  <!-- <link rel="stylesheet" href="https://naogo705.github.io/portfolio/css/main.css"> -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/typewriter.js"></script>
@@ -61,110 +61,114 @@
       <h1 class="topBox__name">Naoto  Fujita</h1>
     </section>
     <section id="profile"  class="profile">
-      <h2 class="profile__title contentsTitle" data-aos="fade-up">PROFILE</h2>
-      <div class="profileArea">
-        <div class="profileArea__thumbnail" data-aos="fade-down-right">
-            <img src="./images/profile2.png" alt="プロフィール写真" class="profileArea__img">
-        </div>
-        <div class="profileArea__introduction" data-aos="fade-down-left">
-          <p class="profileArea__name">氏名：藤田　直人</p>
-          <p class="profileArea__birthplace">出身地：神奈川県</p>
-          <p class="profileArea__greeting">この度はポートフォリオをご覧いただきありがとうございます。<br>
-          Webエンジニアとして活動しております！<br>
-          趣味は映画鑑賞やMTG（マジック・ザ・ギャザリング）で遊ぶことです！！<br>
-          お客様のご要望に丁寧かつ迅速に対応できるよう日々業務を行っております！</p>
+      <div id="profile"  class="profile__area">
+        <h2 class="profile__title contentsTitle" data-aos="fade-up">PROFILE</h2>
+        <div class="profileBox">
+          <div class="profileBox__thumbnail" data-aos="fade-down-right">
+              <img src="./images/profile2.png" alt="プロフィール写真" class="profileBox__img">
+          </div>
+          <div class="profileBox__introduction" data-aos="fade-down-left">
+            <p class="profileBox__name">氏名：藤田　直人</p>
+            <p class="profileBox__birthplace">出身地：神奈川県</p>
+            <p class="profileBox__greeting">この度はポートフォリオをご覧いただきありがとうございます。<br>
+            Webエンジニアとして活動しております！<br>
+            趣味はゲーム（ドラクエなどRPG系）、映画鑑賞、MTG（マジック・ザ・ギャザリング）で遊ぶことです！！<br>
+            ドラクエのようにコツコツと経験値とゴールド（お金）を溜めて自分のLv.UPと楽しいエンジニアライフができるように日々取り組んでおります！</p>
+          </div>
         </div>
       </div>
     </section>
-    <section id="skill" class="skill">
-      <h2 class="skill__title contentsTitle" data-aos="fade-up">SKILL</h2>
-      <div class="contentsBox">
-        <ul class="skillList">
-          <li class="skillList__item" data-aos="flip-left">
-            <div class="skillList__itemBox">
-              <h3 class="skillList__title">HTML5</h3>
-              <p class="skillList__text">レスポンシブ対応やセマンティックなコーディングが可能です。</p>
+    <section class="skill">
+      <div id="skill" class="skill__area">
+        <h2 class="skill__title contentsTitle" data-aos="fade-up">SKILL</h2>
+        <div class="contentsBox">
+          <ul class="skillList">
+            <li class="skillList__item" data-aos="flip-left">
+              <div class="skillList__itemBox">
+                <h3 class="skillList__title">HTML5</h3>
+                <p class="skillList__text">レスポンシブ対応やセマンティックなコーディングが可能です。</p>
+              </div>
+            </li>
+            <li class="skillList__item" data-aos="flip-left">
+              <div class="skillList__itemBox">
+                <h3 class="skillList__title">CSS3</h3>
+                <p class="skillList__text">基本的なコーディングが可能です。CSSを使った様々なアニメーションの実装もできます。</p>
+              </div>
+            </li>
+            <li class="skillList__item" data-aos="flip-left">
+              <div class="skillList__itemBox">
+                <h3 class="skillList__title">JavaScript</h3>
+                <p class="skillList__text">基本的なDOM操作を行った実装が可能です。jQueryでのコーディングも可能でアニメーションの実装ができます。</p>
+              </div>
+            </li>
+            <li class="skillList__item" data-aos="flip-left">
+              <div class="skillList__itemBox">
+                <h3 class="skillList__title">Adobe XD</h3>
+                <p class="skillList__text">デザイン素材の書き出しやシェイプでマスクなどが可能です。</p>
+              </div>
+            </li>
+            <li class="skillList__item" data-aos="flip-left">
+              <div class="skillList__itemBox">
+                <h3 class="skillList__title">Vue.js</h3>
+                <p class="skillList__text">現在勉強中。オンラインツールにて基礎から勉強してます。</p>
+              </div>
+            </li>
+            <li class="skillList__item" data-aos="flip-left">
+              <div class="skillList__itemBox">
+                <h3 class="skillList__title">Notion</h3>
+                <p class="skillList__text">SaaS型の介護サービス開発プロジェクトにて、タスク管理表などを作成しておりました。基本的なツール操作が可能です。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div id="product" class="product__area">
+        <h2 class="product__title contentsTitle" data-aos="fade-up">PRODUCT</h2>
+        <ul class="productList">
+          <li class="productList__item">
+            <div class="productList__introduction" data-aos="zoom-in-right">
+              <p class="productList__title">ポートフォリオサイト</p>
+              <p class="productList__text--time">制作時間：15時間</p>
+              <p class="productList__text">本サイトで自己紹介用のポートフォリオサイトになります。<br>
+              AOS.jsが気になってアニメーション実装してみました！<br>
+              また、初めて作成した自己紹介ページなので今後更新していく予定です！</p>
+            </div>
+            <div class="productList__thumbnail" data-aos="zoom-in-left">
+              <a href="https://naogo705.github.io/portfolio/">
+                <img src="./images/portfolio.png" alt="ポートフォリオサイト" class="productList__img">
+              </a>
             </div>
           </li>
-          <li class="skillList__item" data-aos="flip-left">
-            <div class="skillList__itemBox">
-              <h3 class="skillList__title">CSS3</h3>
-              <p class="skillList__text">基本的なコーディングが可能です。CSSを使った様々なアニメーションの実装もできます。</p>
+          <li class="productList__item">
+            <div class="productList__introduction" data-aos="zoom-in-right">
+              <p class="productList__title">介護サービスの仕組み表</p>
+              <p class="productList__text--time">制作時間：1時間</p>
+              <p class="productList__text">以前関わった業務で介護サービスに付いてまとめた表を作成しました。<br>
+              ツールはfigmaになります！<br>
+              Adove XDの使用経験があった為、今回はfigmaを使ってみました！基本的な操作が可能です！</p>
+            </div>
+            <div class="productList__thumbnail" data-aos="zoom-in-left">
+              <img src="./images/給付管理の流れ.png" alt="介護サービスの仕組み表" class="productList__img">
             </div>
           </li>
-          <li class="skillList__item" data-aos="flip-left">
-            <div class="skillList__itemBox">
-              <h3 class="skillList__title">JavaScript</h3>
-              <p class="skillList__text">基本的なDOM操作を行った実装が可能です。jQueryでのコーディングも可能でアニメーションの実装ができます。</p>
+          <li class="productList__item">
+            <div class="productList__introduction" data-aos="zoom-in-right">
+              <p class="productList__title">農家さんの投稿アプリ</p>
+              <p class="productList__text--time">制作時間：30時間</p>
+              <p class="productList__text">本サイトで自己紹介用のポートフォリオサイトになります。<br>
+              Ruby on Railsで実装してみました！<br>
+              初めてプログラミングを学び実家が農家だった為、農家さんの日常をUPできるサービスが作りたく作成しました！</p>
             </div>
-          </li>
-          <li class="skillList__item" data-aos="flip-left">
-            <div class="skillList__itemBox">
-              <h3 class="skillList__title">Adobe XD</h3>
-              <p class="skillList__text">デザイン素材の書き出しやシェイプでマスクなどが可能です。</p>
-            </div>
-          </li>
-          <li class="skillList__item" data-aos="flip-left">
-            <div class="skillList__itemBox">
-              <h3 class="skillList__title">Vue.js</h3>
-              <p class="skillList__text">現在勉強中。オンラインツールにて基礎から勉強してます。</p>
-            </div>
-          </li>
-          <li class="skillList__item" data-aos="flip-left">
-            <div class="skillList__itemBox">
-              <h3 class="skillList__title">Notion</h3>
-              <p class="skillList__text">SaaS型の介護サービス開発プロジェクトにて、タスク管理表などを作成しておりました。基本的なツール操作が可能です。</p>
+            <div class="productList__thumbnail" data-aos="zoom-in-left">
+              <a href="https://farmer--market.herokuapp.com/">
+                <img src="./images/farmers-market.png" alt="農家さんの投稿アプリ" class="productList__img">
+              </a>
             </div>
           </li>
         </ul>
       </div>
-    </section>
-    <section id="product" class="product">
-      <h2 class="product__title contentsTitle" data-aos="fade-up">PRODUCT</h2>
-      <ul class="productList">
-        <li class="productList__item">
-          <div class="productList__introduction" data-aos="zoom-in-right">
-            <p class="productList__title">ポートフォリオサイト</p>
-            <p class="productList__text--time">制作時間：15時間</p>
-            <p class="productList__text">本サイトで自己紹介用のポートフォリオサイトになります。<br>
-            AOS.jsが気になってアニメーション実装してみました！<br>
-            また、初めて作成した自己紹介ページなので今後更新していく予定です！</p>
-          </div>
-          <div class="productList__thumbnail" data-aos="zoom-in-left">
-            <a href="https://naogo705.github.io/portfolio/">
-              <img src="./images/portfolio.png" alt="ポートフォリオサイト" class="productList__img">
-            </a>
-          </div>
-
-        </li>
-        <li class="productList__item">
-          <div class="productList__introduction" data-aos="zoom-in-right">
-            <p class="productList__title">介護サービスの仕組み表</p>
-            <p class="productList__text--time">制作時間：1時間</p>
-            <p class="productList__text">以前関わった業務で介護サービスに付いてまとめた表を作成しました。<br>
-            ツールはfigmaになります！<br>
-            Adove XDの使用経験があった為、今回はfigmaを使ってみました！基本的な操作が可能です！</p>
-          </div>
-          <div class="productList__thumbnail" data-aos="zoom-in-left">
-            <img src="./images/給付管理の流れ.png" alt="介護サービスの仕組み表" class="productList__img">
-          </div>
-        </li>
-        <li class="productList__item">
-          <div class="productList__introduction" data-aos="zoom-in-right">
-            <p class="productList__title">農家さんの投稿アプリ</p>
-            <p class="productList__text--time">制作時間：30時間</p>
-            <p class="productList__text">本サイトで自己紹介用のポートフォリオサイトになります。<br>
-            Ruby on Railsで実装してみました！<br>
-            初めてプログラミングを学び実家が農家だった為、農家さんの日常をUPできるサービスが作りたく作成しました！</p>
-          </div>
-          <div class="productList__thumbnail" data-aos="zoom-in-left">
-            <a href="https://farmer--market.herokuapp.com/">
-              <img src="./images/farmers-market.png" alt="農家さんの投稿アプリ" class="productList__img">
-            </a>
-          </div>
-
-        </li>
-      </ul>
     </section>
   </main>
   <footer class="footer">
@@ -191,6 +195,14 @@
       const profile = $("#profile").offset().top;
 
       $(window).scrollTop(profile);
+
+      //クリックされた要素とcheckedを比較
+      if($("#spHeader__btn-check").is(":checked")) {
+        //inputの「:checked」をfalse
+        $("#spHeader__btn-check").prop('checked', false);
+        //checkedを初期化
+        checked = '';
+      }
     });
 
     $("#skillBtn").on("click", function(){
@@ -203,6 +215,14 @@
       const skill = $("#skill").offset().top;
 
       $(window).scrollTop(skill);
+
+      //クリックされた要素とcheckedを比較
+      if($("#spHeader__btn-check").is(":checked")) {
+        //inputの「:checked」をfalse
+        $("#spHeader__btn-check").prop('checked', false);
+        //checkedを初期化
+        checked = '';
+      }
     });
 
     $("#productBtn").on("click", function(){
@@ -214,7 +234,16 @@
     $("#productBtn_sp").on("click", function(){
       const product = $("#product").offset().top;
 
+      // $(".spHeader__nav").css("left", "100%")
       $(window).scrollTop(product);
+
+      //クリックされた要素とcheckedを比較
+      if($("#spHeader__btn-check").is(":checked")) {
+        //inputの「:checked」をfalse
+        $("#spHeader__btn-check").prop('checked', false);
+        //checkedを初期化
+        checked = '';
+      }
     });
   </script>
 </body>

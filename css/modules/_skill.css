@@ -2,3 +2,7 @@
 .skill {
   text-align: center;
 }
+
+.skill__area {
+  padding-top: 100px;
+}

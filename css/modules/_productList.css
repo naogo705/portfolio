@@ -20,6 +20,7 @@
   .productList__item {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 60px;
     border-bottom: 1px dashed #666;
     padding: 0 20px 60px;

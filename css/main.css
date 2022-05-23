@@ -579,7 +579,7 @@ li {
   .topBox {
     display: flex;
     justify-content: center;
-    padding: 300px 0 300px;
+    padding: 345px 0 345px;
   }
 
   .topBox__name {

@@ -13,7 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&family=M+PLUS+1p:wght@800&family=Montserrat:wght@700&display=swap');
 
 /* _common.css */
-/* body {
+body {
   overflow-x: hidden;
 }
 
@@ -37,7 +37,7 @@ li {
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-} */
+}
 
 /* _contentsTitle.css */
 /* PCstyle */
@@ -95,7 +95,7 @@ li {
 }
 
 /* _footer.css */
-/* .footer {
+.footer {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -104,7 +104,7 @@ li {
 .footer__text {
   color: #666;
   font-size: 16px;
-} */
+}
 
 /* _header.css */
 /* 共通style */

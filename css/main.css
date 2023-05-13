@@ -7,7 +7,7 @@
 @import url("modules/_contentsTitle.css");
 @import url("https://naogo705.github.io/portfolio/css/modules/product.css");
 @import url("modules/_productList.css");
-@import url("modules/_profile.css");
+@import url("modules/profile.css");
 @import url("modules/_profileBox.css");
 @import url("https://naogo705.github.io/portfolio/css/modules/_footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&family=M+PLUS+1p:wght@800&family=Montserrat:wght@700&display=swap');
@@ -406,7 +406,7 @@ li {
   }
 }
 
-/* _profile.css */
+/* profile.css */
 .profile {
   text-align: center;
 }

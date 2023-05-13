@@ -1,4 +1,4 @@
-/* @import url("reset.css");
+@import url("reset.css");
 @import url("modules/_header.css");
 @import url("modules/_topBox.css");
 @import url("modules/_skill.css");
@@ -9,7 +9,7 @@
 @import url("modules/_productList.css");
 @import url("modules/_profile.css");
 @import url("modules/_profileBox.css");
-@import url("modules/_footer.css"); */
+@import url("./modules/_footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&family=M+PLUS+1p:wght@800&family=Montserrat:wght@700&display=swap');
 
 /* _common.css */
@@ -95,7 +95,7 @@ li {
 }
 
 /* _footer.css */
-.footer {
+/* .footer {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -104,7 +104,7 @@ li {
 .footer__text {
   color: #666;
   font-size: 16px;
-}
+} */
 
 /* _header.css */
 /* 共通style */

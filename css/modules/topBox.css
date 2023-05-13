@@ -1,7 +1,7 @@
 /* 共通style */
 .topBox__name span {
   opacity: 0;
-  background-image: url("../images/meisai.jpg");
+  background-image: url("https://naogo705.github.io/portfolio/images/meisai.jpg");
   background-size: cover;
   -webkit-background-clip: text;
   color: #00000000;
